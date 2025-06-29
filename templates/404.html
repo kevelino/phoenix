@@ -1,8 +1,35 @@
 {% extends './base.html' %}
 
+{% load static %}
 
 {% block title %} 404 - Page Not Found {% endblock title %}
 
+{% block header %}
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'img/logo.png' %}" alt="Site Logo">
+        <h1 class="sitename">Phoenix</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+{% endblock header %}
 
 {% block content %}
   
@@ -11,14 +38,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);">
       <div class="container position-relative">
-        <h1>Starter Page</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
-          </ol>
-        </nav>
+        <h1> 404 - Page Non Trouvée </h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -27,13 +47,12 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Page Non Trouvée</h2>
+        <p>La page que vous recherchez n'existe pas sur notre site.</p>
+        <div class="py-2">
+          <a href="/" class="btn btn-primary"> Retour à l'accueil <i class="bi bi-arrow-right icon"></i></a>
+        </div>
       </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div>
 
     </section><!-- /Starter Section Section -->
 
