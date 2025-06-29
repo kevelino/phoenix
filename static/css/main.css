@@ -86,7 +86,7 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-
+ 
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -1744,7 +1744,7 @@ section,
   border-radius: 0;
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, #495057, transparent 80%);
 }
 
 .contact .php-email-form input[type=text]:focus,
