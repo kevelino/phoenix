@@ -12,7 +12,9 @@ def send_contact_email(request, name, email, subject, message):
     subject = f"[Contact] {subject} - {name}"
     
     email_message = render_to_string("emails/email-template.txt", {
-      'message': message
+      'message': message,
+      'email': email,
+      'name': name,
     }) 
     
     try:

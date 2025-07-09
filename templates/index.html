@@ -3,34 +3,6 @@
 {% load static %}
 
 {% block title %} Phoenix - Experts en construction & remodelage de stations-service. {% endblock title %}
-
-
-{% block header %}
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="/" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="{% static 'img/logo.png' %}" alt="Site Logo">
-        <h1 class="sitename">Phoenix</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Accueil</a></li>
-          <li><a href="#about">A propos</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Réalisations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-{% endblock header %}
   
 
 {% block content %}
@@ -47,7 +19,7 @@
           <div class="carousel-container">
             <h2>Stations d'avenir</h2>
             <p>Nous concevons et construisons des stations-service modernes, performantes et durables, alliant efficacité opérationnelle, normes techniques, environnementales et un design contemporain pour répondre aux exigences du secteur pétrolier.</p>
-            <a href="#services" class="btn-get-started">Nos Services</a>
+            <a href="/#services" class="btn-get-started">Nos Services</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -56,7 +28,7 @@
           <div class="carousel-container">
             <h2>Excellence technique</h2>
             <p>Chaque projet est piloté par une équipe d'experts maîtrisant les enjeux techniqus, réglementaires et logistiques. Nous garantissons une éxucution rigoureuse, sécurisée et conforme aux standards les plus exigeants.</p>
-            <a href="#portfolio" class="btn-get-started">Nos Réalisations</a>
+            <a href="/#portfolio" class="btn-get-started">Nos Réalisations</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -69,11 +41,11 @@
           </div>
         </div><!-- End Carousel Item -->
 
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev" href="/#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
 
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <a class="carousel-control-next" href="/#hero-carousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a>
 
@@ -108,7 +80,7 @@
               <li><i class="bi bi-check-circle"></i> <span>Travaux de rénovation et de mise aux normes.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Respect ds délais, de la qualité et de la sécurité.</span></li>
             </ul>
-            <a href="#services" class="read-more"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
+            <a href="/#services" class="read-more"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
@@ -227,7 +199,7 @@
             <div class="text-center">
               <h3>Confiez-nous votre prochain projet de construction</h3>
               <p>Que vous souhaitiez construire une nouvelle station ou remodeler une infrastructure existante, nous mettons à votre service notre expertise, notre riguer et notre engagement qualité.</p>
-              <a class="cta-btn" href="#contact">Demander un devis</a>
+              <a class="cta-btn" href="/#contact">Demander un devis</a>
             </div>
           </div>
         </div>
@@ -252,111 +224,105 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">Tous</li>
-            <!--<li data-filter=".filter-bequaire">Bequaire</li>-->
-            <li data-filter=".filter-decanteur">Décanteur</li>
-            <li data-filter=".filter-hilleau">Hilleau</li>
-            <li data-filter=".filter-piste">Piste</li>
-            <li data-filter=".filter-coffrage">Coffrage</li>
+            <li data-filter=".filter-before">Avant</li>
+            <li data-filter=".filter-after">Après</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bequaire">
-              <img src="{% static 'img/portfolio/bequaire-1.jpg' %}" class="img-fluid" alt="Illustration Bequaire">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/bequaire-1.jpg' %}" title="App 1" data-gallery="portfolio-gallery-bequaire" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div> End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-decanteur">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-before">
               <img src="{% static 'img/portfolio/decanteur-1.jpg' %}" class="img-fluid" alt="Illustration Décanteur">
               <div class="portfolio-info">
-                <h4>Décanteur 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/decanteur-1.jpg' %}" title="Décanteur 1" data-gallery="portfolio-gallery-decanteur" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Décanteur</h4>
+                <a href="{% static 'img/portfolio/decanteur-1.jpg' %}" title="Décanteur" data-gallery="portfolio-gallery-decanteur" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hilleau">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-before">
               <img src="{% static 'img/portfolio/hilleau-1.jpg' %}" class="img-fluid" alt="Illustration hilleau">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/hilleau-1.jpg' %}" title="Hilleau 1" data-gallery="portfolio-gallery-hilleau" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Hilleau</h4>
+                <a href="{% static 'img/portfolio/hilleau-1.jpg' %}" title="Hilleau" data-gallery="portfolio-gallery-hilleau" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-piste">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-before">
+              <img src="{% static 'img/portfolio/coffrage-1.jpg' %}" class="img-fluid" alt="Illustration Coffrage">
+              <div class="portfolio-info">
+                <h4>Coffrage</h4>
+                <a href="{% static 'img/portfolio/coffrage-1.jpg' %}" title="Coffrage" data-gallery="portfolio-gallery-decanteur" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-after">
+              <img src="{% static 'img/finished/engine-oil-3.jpg' %}" class="img-fluid" alt="Station Engine Oil">
+              <div class="portfolio-info">
+                <h4>Station Engine Oil</h4>
+                <a href="{% static 'img/finished/engine-oil-3.jpg' %}" title="Station Engine Oil" data-gallery="portfolio-gallery-decanteur" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-after">
+              <img src="{% static 'img/finished/engine-oil-4.jpg' %}" class="img-fluid" alt="Station Engine Oil">
+              <div class="portfolio-info">
+                <h4>Station Engine Oil</h4>
+                <a href="{% static 'img/finished/engine-oil-4.jpg' %}" title="Station Engine Oil" data-gallery="portfolio-gallery-hilleau" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-after">
+              <img src="{% static 'img/finished/engine-oil-5.jpg' %}" class="img-fluid" alt="Station Engine Oil">
+              <div class="portfolio-info">
+                <h4>Station Engine Oil</h4>
+                <a href="{% static 'img/finished/engine-oil-5.jpg' %}" title="Station Engine Oil" data-gallery="portfolio-gallery-decanteur" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-before">
               <img src="{% static 'img/portfolio/piste-1.jpg' %}" class="img-fluid" alt="Illustration Piste">
               <div class="portfolio-info">
                 <h4>Books 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
                 <a href="{% static 'img/portfolio/piste-1.jpg' %}" title="Piste 1" data-gallery="portfolio-gallery-piste" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bequaire">
-              <img src="{% static 'img/portfolio/bequaire-2.jpg' %}" class="img-fluid" alt="Illustration Bequaire">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/bequaire-2.jpg' %}" title="Bequaire 2" data-gallery="portfolio-gallery-bequaire" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-coffrage">
-              <img src="{% static 'img/portfolio/coffrage-1.jpg' %}" class="img-fluid" alt="Illustration Coffrage">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/coffrage-1.jpg' %}" title="Coffrage 1" data-gallery="portfolio-gallery-decanteur" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-decanteur">
-              <img src="{% static 'img/portfolio/decanteur-2.jpg' %}" class="img-fluid" alt="Illustration Décanteur">
-              <div class="portfolio-info">
-                <h4>Décanteur 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/decanteur-2.jpg' %}" title="Décanteur 2" data-gallery="portfolio-gallery-decanteur" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hilleau">
-              <img src="{% static 'img/portfolio/hilleau-2.jpg' %}" class="img-fluid" alt="Illustration hilleau">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/hilleau-2.jpg' %}" title="Hilleau 2" data-gallery="portfolio-gallery-hilleau" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-piste">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-before">
               <img src="{% static 'img/portfolio/piste-2.jpg' %}" class="img-fluid" alt="Illustration Piste">
               <div class="portfolio-info">
                 <h4>Books 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
                 <a href="{% static 'img/portfolio/piste-2.jpg' %}" title="Branding 2" data-gallery="portfolio-gallery-piste" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-coffrage">
-              <img src="{% static 'img/portfolio/coffrage-2.jpg' %}" class="img-fluid" alt="Illustration coffrage">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{% static 'img/portfolio/coffrage-2.jpg' %}" title="Coffrage 2" data-gallery="portfolio-gallery-coffrage" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-piste">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-before">
               <img src="{% static 'img/portfolio/piste-3.jpg' %}" class="img-fluid" alt="Illustration Piste">
               <div class="portfolio-info">
                 <h4>Books 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
                 <a href="{% static 'img/portfolio/piste-3.jpg' %}" title="Piste 3" data-gallery="portfolio-gallery-piste" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-after">
+              <img src="{% static 'img/finished/solaris-energy-8.jpg' %}" class="img-fluid" alt="Illustration Piste">
+              <div class="portfolio-info">
+                <h4>Station Solaris Energy</h4>
+                <a href="{% static 'img/finished/solaris-energy-8.jpg' %}" title="Station Solaris Energy" data-gallery="portfolio-gallery-piste" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-after">
+              <img src="{% static 'img/finished/solaris-energy-7.jpg' %}" class="img-fluid" alt="Illustration Piste">
+              <div class="portfolio-info">
+                <h4>Station Solaris Energy</h4>
+                <a href="{% static 'img/finished/solaris-energy-7.jpg' %}" title="Station Solaris Energy" data-gallery="portfolio-gallery-piste" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-after">
+              <img src="{% static 'img/finished/solaris-energy-10.jpg' %}" class="img-fluid" alt="Illustration Piste">
+              <div class="portfolio-info">
+                <h4>Station Solaris Energy</h4>
+                <a href="{% static 'img/finished/solaris-energy-10.jpg' %}" title="Station Solaris Energy" data-gallery="portfolio-gallery-piste" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -387,7 +353,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>BP: 7535 DLA</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -395,7 +361,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+ 237 233 41 28 09</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -403,7 +369,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>info@example.com</p>
+              <p>contact@phoenix.com</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -444,6 +410,84 @@
 
     </section><!-- /Contact Section -->
 
+    <!-- Partners Section -->
+    <section id="partners" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nos Partenaires</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="100">
+            <a href="#">
+              <div class="partner-item">
+              <div class="w-100 d-flex justify-content-center">
+                <img class="img-fluid" src="{% static 'img/partners/pompe_engine_oil_partenaire.jpg' %}" alt="Pompe Engine Oil Partenaire">
+              </div>
+              <div>
+                <h4 class="title">Engine Oil</h4>
+              </div>
+            </div>
+            </a>
+          </div><!-- End Partners Item -->
+          <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="200">
+            <a href="#">
+              <div class="partner-item">
+              <div class="w-100 d-flex justify-content-center">
+                <img class="img-fluid" src="{% static 'img/partners/pompe_petrolink_partenaire.jpg' %}" alt="Pompe Petrolink Partenaire">
+              </div>
+              <div>
+                <h4 class="title">Petrolink</h4>
+              </div>
+            </div>
+            </a>
+          </div><!-- End Partners Item -->
+          <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="300">
+            <a href="#">
+              <div class="partner-item">
+              <div class="w-100 d-flex justify-content-center">
+                <img class="img-fluid" src="{% static 'img/partners/pompe_venus_partenaire.jpg' %}" alt="Pompe Venus Partenaire">
+              </div>
+              <div>
+                <h4 class="title">Venus</h4>
+              </div>
+            </div>
+            </a>
+          </div><!-- End Partners Item -->
+          <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="400">
+            <a href="#">
+              <div class="partner-item">
+              <div class="w-100 d-flex justify-content-center">
+                <img class="img-fluid" src="{% static 'img/partners/pompe_vision_energie_partenaire.jpg' %}" alt="Pompe Vision Energie Partenaire">
+              </div>
+              <div>
+                <h4 class="title">Vision Energie</h4>
+              </div>
+            </div>
+            </a>
+          </div><!-- End Partners Item -->
+          <div class="col-6 col-md" data-aos="fade-up" data-aos-delay="500">
+            <a href="#">
+              <div class="partner-item">
+              <div class="w-100 d-flex justify-content-center">
+                <img class="img-fluid" src="{% static 'img/partners/bluesky_technologie -partenaire.jpg' %}" alt="Bluesky Technologies Partenaire">
+              </div>
+              <div>
+                <h4 class="title">Bluesky Technologies</h4>
+              </div>
+            </div>
+            </a>
+          </div><!-- End Partners Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Partners Section -->
   </main>
 
 {% endblock content %}
@@ -456,14 +500,13 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="/" class="logo d-flex align-items-center">
             <span class="sitename">Phoenix</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>BP: 7535 DLA</p>
+            <p class="mt-3"><strong>Téléphone:</strong> <span>+ 237 233 41 28 09</span></p>
+            <p><strong>Adresse mail:</strong> <span>contact@phoenix.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -474,38 +517,27 @@
         </div>
 
         <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Liens Rapides</h4>
           <ul>
-            <li><a href="#hero" class="active">Accueil</a></li>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Réalisations</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/#hero" class="active">Accueil</a></li>
+            <li><a href="/#about">A propos</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#portfolio">Réalisations</a></li>
+            <li><a href="/#contact">Contact</a></li>
+            <li><a href="/#partners">Partenaires</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-3 footer-links">
           <h4>Nos Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Décanteur Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Construction</a></li>
+            <li><a href="#">Remodelage</a></li>
+            <li><a href="#">Installation de systèmes carburant</a></li>
+            <li><a href="#">Signalisation & aménagement</a></li>
+            <li><a href="#">Mise en conformité</a></li>
           </ul>
         </div>
-
-        <!--<div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our Décanteurs and services!</p>
-          <form action="/static/forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>-->
-
       </div>
     </div>
 

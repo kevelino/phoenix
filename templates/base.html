@@ -34,16 +34,53 @@
     input, textarea{
       border-color: #aaaaaa !important;
     }
+    .services .partner-item{
+      border: 1px solid color-mix(in srgb, #666666, transparent 85%);
+    }
+    .services .partner-item:hover{
+      border: 1px solid #D81816;
+      transition: 0.3s;
+    }
+    .services .partner-item img{
+      width: auto;
+      height: 180px;
+    }
+    .services .partner-item div{
+      margin: 12px 0;
+    }
+    .services .partner-item h4.title{
+      text-align: center;
+      font-weight: 600;
+    }
   </style>
 
 </head>
 
 <body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-  
-  {% block header %}{% endblock header %} 
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'img/logo.png' %}" alt="Site Logo">
+        <h1 class="sitename">Phoenix</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/#hero" class="active">Accueil</a></li>
+          <li><a href="/#about">A propos</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#portfolio">Réalisations</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#partners">Partenaires</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
  
-
   {% block content %}{% endblock content %}
 
 

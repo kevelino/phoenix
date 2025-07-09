@@ -1,1 +1,7 @@
+Nouveau Message !!
+
 {{ message }}
+
+De {{ nom }} - {{ email }}
+
+Powered By: https://discom-group.com
